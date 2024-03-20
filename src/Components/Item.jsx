@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Item = ({title, emoji}) => {
+const Item = ({title, emoji, darkMode}) => {
     const [copy, setCopy] = useState(false)
     const uno = () =>{
         setCopy(true)
@@ -11,7 +11,7 @@ const Item = ({title, emoji}) => {
     }
 
   return (
-    <article  className='card-emoji'>
+    <article  className={`card-emoji ${darkMode?"dark-mode":""}`}>
         <p className='emoji-icon' onClick={uno} >{emoji}</p>
         <h4>{title}</h4>
         {copy && <p className='copied'>Copied</p>}

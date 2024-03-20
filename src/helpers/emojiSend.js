@@ -10,7 +10,7 @@ const emojiSend = (value) => {
         }
    
     })
-    return value === '' ? response : response.slice(0.24)
+    return response
 }
 
 export default emojiSend

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-const Form = ({ setEmoji }) => {
-  const [value, setValue] = useState("");
+const Form = ({ setEmoji, modeDark, darkMode }) => {
+  const [value, setValue] = useState('');
   const [error, setError] = useState(false);
   const one = (e) => {
     e.preventDefault();
@@ -16,12 +16,14 @@ const Form = ({ setEmoji }) => {
     console.log(value);
   };
 
-  const dos = e => {
-    setEmoji('')
-  }
+  const dos = () => {
+      setEmoji('')
+    }
+ 
+  
 
   return (
-    <section className="form">
+    <section className={`form ${darkMode?"dark-mode":""}`}>
       <form onSubmit={one}>
         <input
           type="text"
@@ -29,6 +31,9 @@ const Form = ({ setEmoji }) => {
           onChange={(e) => setValue(e.target.value)}
         />
         <button type="button" onClick={dos}>All</button>
+        <div className="toggle-box" onClick={modeDark} >
+          <div className="toggle-circle"></div>
+        </div>
       </form>
       {error && <p className="error">Enter search</p>}
     </section>
