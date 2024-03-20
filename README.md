@@ -13,6 +13,6 @@ package.json (scripts)
 -"predeploy": "npm run build",
 -"deploy": "gh-pages -d dist"
 Terminal (install)
-- npm i --save-dev -gh-pages
+- npm i --save-dev gh-pages
 - npm run deploy
 
