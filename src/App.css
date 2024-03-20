@@ -13,28 +13,42 @@ body {
 
 .hero {
   background-color: #ffdd67;
-  padding: 5% 0;
+  padding: 2% 0;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+}
+.hero img{
+  border-radius: 50%;
+  height: 80px;
+  margin: 0 5px 0 20px
 }
 .hero h2 {
-  font-size: 70px;
+  font-size: 40px;
   font-weight: 900;
   margin: 15px 0;
+  text-align: center;
+}
+.hero h3{
+  text-decoration: underline;
+
 }
 
 /* Form component... */
 .form {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   padding: 4% 0 4%;
-  position: relative;
+
 }
 .form form {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 20px;
 }
 .form form button {
@@ -53,7 +67,8 @@ body {
   font-size: inherit;
   border: 3px solid #ffffff00;
   border-radius: 8px;
-  width: 300px;
+  width: 80%;
+  max-width: 300px;
   outline: none;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   position: relative;
@@ -64,6 +79,7 @@ body {
   background-repeat: no-repeat;
   background-position: right;
   display: inline-block;
+  
 }
 .form.dark-mode input[type="text"] {
   background-color: #4a4a4a;
@@ -97,7 +113,10 @@ body {
 .card-emoji {
   /* border: 1px solid gray; */
   background-color: #fff;
-  width: 250px;
+  width: 40%;
+  max-width: 250px;
+  height: auto;
+
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   margin-bottom: 20px;
   display: flex;
@@ -130,7 +149,7 @@ body {
   }
 }
 .card-emoji p.emoji-icon {
-  font-size: 84px;
+  font-size: 60px;
   margin: 0;
 }
 .card-emoji {
