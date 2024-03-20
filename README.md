@@ -9,6 +9,8 @@ Currently, two official plugins are available:
 Terminal (install)
 -npm create vite@latest
 -npm install
+vite.config.js
+-  base:"https://andresquito.github.io/02.Emoji-Selection"
 package.json (scripts)
 -"predeploy": "npm run build",
 -"deploy": "gh-pages -d dist"
